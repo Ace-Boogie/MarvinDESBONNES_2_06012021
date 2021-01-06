@@ -1,0 +1,242 @@
+body {
+    font-family: 'Raleway', serif;
+}
+
+@media (max-width: 575px) {
+    main {
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #logo_reservia, #navRegister {
+        order: -1;
+    }
+
+    #navsHeader {
+        display: flex;
+        width: 100%;
+    }
+
+    #navsHeader > ul {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    #navsHeader > ul > li > a, #navRegister {
+        text-decoration: none;
+    }
+
+    #navLodging, #navRegister {
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    #navLodging {
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+    }
+
+    #navActivity {
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        width: 100%;
+    }
+
+    .navHeader{
+        margin:0 10px;
+    }
+
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    main {
+        width: 93%;
+        margin: auto;
+    }
+
+    header {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    img {
+        position: absolute;
+        top: 6%;
+        left: 4%;
+    }
+
+    #navsHeader {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navsHeader > ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    #navRegister {
+        margin-left: 15px;
+    }
+
+    #navsHeader > ul > li > a, #navRegister {
+        text-decoration: none;
+    }
+
+    #navLodging, #navRegister {
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    #navLodging {
+        border-top: 2px #0065FC solid;
+        padding-top: 30px;
+    }
+
+    #navActivity {
+        color: black;
+        font-weight: bold;
+    }
+
+    .navHeader{
+        margin:0 10px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        width: 93%;
+        margin: auto;
+    }
+
+    header {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    img {
+        position: absolute;
+        top: 6%;
+        left: 4%;
+    }
+
+    #navsHeader {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navsHeader > ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    #navRegister {
+        margin-left: 15px;
+    }
+
+    #navsHeader > ul > li > a, #navRegister {
+        text-decoration: none;
+    }
+
+    #navLodging, #navRegister {
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    #navLodging {
+        border-top: 2px #0065FC solid;
+        padding-top: 30px;
+    }
+
+    #navActivity {
+        color: black;
+        font-weight: bold;
+    }
+
+    .navHeader{
+        margin:0 10px;
+    }
+}
+
+/*Large devices (desktops)*/
+@media (min-width: 992px) {
+    main {
+        width: 93%;
+        margin: auto;
+    }
+
+    header {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    img {
+        position: absolute;
+        top: 6%;
+        left: 4%;
+    }
+
+    #navsHeader {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navsHeader > ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    #navRegister {
+        margin-left: 15px;
+    }
+
+    #navsHeader > ul > li > a, #navRegister {
+        text-decoration: none;
+    }
+
+    #navLodging, #navRegister {
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    #navLodging {
+        border-top: 2px #0065FC solid;
+        padding-top: 30px;
+    }
+
+    #navActivity {
+        color: black;
+        font-weight: bold;
+    }
+
+    .navHeader{
+        margin:0 10px;
+    }
+}
