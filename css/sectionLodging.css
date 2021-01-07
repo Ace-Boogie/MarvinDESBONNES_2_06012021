@@ -109,6 +109,44 @@
         align-items: center;
         font-size: 1.2em;
     }
+    /*Ressources Lodging*/
+
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
@@ -214,6 +252,45 @@
         display: flex;
         align-items: center;
         font-size: 1.2em;
+    }
+
+    /*Ressources Lodging*/
+
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
     }
 }
 
@@ -327,6 +404,44 @@
         align-items: center;
         font-size: 1.2em;
     }
+    /*Ressources Lodging*/
+
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplashResize.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplashResize.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplashResize.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplashResize.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplashResize.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplashResize.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplashResize.jpg");
+    }
 }
 
 /*Large devices (desktops)*/
@@ -437,6 +552,45 @@
         align-items: center;
         font-size: 1.2em;
     }
+
+    /*Ressources Lodging*/
+
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
 }
 
 /*Color*/
@@ -452,41 +606,3 @@
     color: #DEEBFF;
 }
 
-/*Ressources Lodging*/
-
-.lodging1 {
-    background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
-
-.lodging2 {
-    background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-
-.lodging3 {
-    background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-
-.lodging4 {
-    background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-
-.lodging5 {
-    background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-
-.lodging6 {
-    background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-}
-
-/*Ressources Aside*/
-#aside1 {
-    background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-
-#aside2 {
-    background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-
-#aside3 {
-    background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
