@@ -1,4 +1,8 @@
 @media (max-width: 575px) {
+    #sectionSearch {
+        margin-left: 20px;
+    }
+
     button {
         border: 1px #0065FC solid;
         background-color: #0065FC;
@@ -16,16 +20,6 @@
 
     #formSearch {
         display: flex;
-    }
-
-    #economie {
-        margin-top: 20%;
-        margin-left: -46px;
-    }
-
-    #familiale {
-        margin-top: 20%;
-        margin-left: 10px;
     }
 
     #filtres {
@@ -58,8 +52,8 @@
 
 
     #filtresContenu > p:first-child {
-        padding-top: 10px;
-        margin-right: 20px;
+        padding-left: 3%;
+        padding-right: 44%;
     }
 
     #filtresContenu > p > i {
@@ -80,14 +74,15 @@
         border: 1px #F2F2F2 solid;
         border-radius: 100%;
         color: #0065FC;
-        padding: 5px 10px;
+        padding: 10px 13px;
     }
 
     .iconBorder {
         border: 1px #F2F2F2 solid;
         border-radius: 20px;
         padding-right: 10px;
-        margin-left: 20px;
+        margin-top: 0;
+        margin-right: 2%;
     }
 
 }
@@ -322,5 +317,10 @@
         border-radius: 20px;
         padding-right: 10px;
         margin-left: 20px;
+    }
+
+    .iconBorder:hover {
+        background-color: #0065FC;
+        color: white;
     }
 }
