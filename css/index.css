@@ -2,12 +2,47 @@ body {
     font-family: 'Raleway', serif;
 }
 
+/*Color*/
+.colorLightGrey {
+    color: #F2F2F2;
+}
+
+.colorBlue {
+    color: #0065FC;
+}
+
+.colorLightBleu {
+    color: #DEEBFF;
+}
+
+/*Ressources Activities*/
+
+
+.activity2 {
+    background-image: url("../img/activity/4_small/img_05_paul-hermann-QFTrLdQIRhI-unsplashResize.jpg");
+}
+
+.activity3 {
+    background-image: url("../img/activity/4_small/img_02_kevin-hikari-rV_Qd1l-VXg-unsplashResize.jpg");
+}
+
+
+.activity5 {
+    background-image: url("../img/activity/4_small/img_01_florian-wehde-xW9e8gdotxI-unsplashResize.jpg");
+}
+
+.activity6 {
+    background-image: url("../img/activity/4_small/img_04_lena-paulin-wH2-EJoDcV0-unsplashResize.jpg");
+}
+
+
 @media (max-width: 575px) {
     main {
         width: auto;
         flex-wrap: wrap;
     }
 
+    /*------------------------header-----------------------------------------------------------*/
     header {
         display: flex;
         flex-flow: row wrap;
@@ -59,8 +94,323 @@ body {
         width: 100%;
     }
 
-    .navHeader{
-        margin:0 10px;
+    .navHeader {
+        margin: 0 10px;
+    }
+
+    /*------------------------Section Recherche-------------------------------------------------------*/
+    #sectionSearch {
+        margin-left: 20px;
+    }
+
+    button {
+        border: 1px #0065FC solid;
+        background-color: #0065FC;
+        color: white;
+        margin-left: -4px;
+        padding: 12px 18px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    button::after {
+        font-family: "Font Awesome 5 Free", serif;
+        font-weight: 900;
+        content: '\f002';
+    }
+
+    #formSearch {
+        display: flex;
+    }
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    input {
+        padding: 12px 2px;
+        text-align: center;
+        border: 1px #F2F2F2 solid;
+        margin-left: -4px;
+        width: 100%;
+    }
+
+    #iconeMap {
+        border: 1px #F2F2F2 solid;
+        padding: 10px 10px 13px 10px;
+        background-color: #F2F2F2;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #filtresContenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+
+
+    #filtresContenu > p:first-child {
+        padding-left: 3%;
+        padding-right: 44%;
+    }
+
+    #filtresContenu > p > i {
+        padding: 10px;
+        margin-right: 5px;
+        border: 2px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        background-color: #DEEBFF;
+    }
+
+    #filtres > p {
+        display: flex;
+    }
+
+    #filtres > p > i {
+        margin-right: 15px;
+        border: 1px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        padding: 10px 13px;
+    }
+
+    .iconBorder {
+        border: 1px #F2F2F2 solid;
+        border-radius: 20px;
+        padding-right: 10px;
+        margin-top: 0;
+        margin-right: 2%;
+    }
+
+    /*------------------------Section Hébergements----------------------------------------------------*/
+    #sectionLodging {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteneurLodging {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .conteneurLodgingAnnexe {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contenuLodging {
+        width: 88%;
+        height: 200px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 15px;
+        background-size: 100% 55%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+
+    }
+
+    .conteneurLodging > h2, .conteneurLodging > p {
+        margin-left: 2%;
+    }
+
+    .contenuLodging > article {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+    }
+
+    .contenuLodging > article > h3, .contenuLodging > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .contenuLodging > article > p, .asideContenu > article > p {
+        font-size: 0.9em;
+    }
+
+    .contenuLodging > article > div > i, .asideContenu > article > div > i {
+        font-size: 0.6em;
+    }
+
+    aside {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .asideContenu {
+        width: auto;
+        height: 120px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 15px;
+        background-size: 40% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .asideContenu > article {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 55%;
+    }
+
+    .asideContenu > article > h3, .asideContenu > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .asideTitle {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .asideTitle > i {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    /*Ressources Lodging*/
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplashResize.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplashResize.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplashResize.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplashResize.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplashResize.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplashResize.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplashResize.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplashResize2.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
+
+    /*------------------------Section Activités-------------------------------------------------------*/
+    #sectionActivities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .actLarge {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 200px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .actLarge > p, .contenuActSmall > p {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    }
+
+    .actSmall {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenuActSmall {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 200px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .activity1 {
+        background-image: url("../img/activity/4_small/img_06_reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    }
+
+    .activity4 {
+        background-image: url("../img/activity/4_small/img_03_kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    }
+
+
+    /*------------------------Footer-----------------------------------------------------------------*/
+    #conteneurFooter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #F2F2F2;
+        margin: 10px;
+        padding-left: 25px;
+    }
+
+    .elementFooter > h3 {
+        font-weight: bold;
+    }
+
+    .elementFooter > ul {
+        padding-left: 0;
+    }
+
+    .elementFooter > ul > li {
+        list-style-type: none;
     }
 
 }
@@ -72,6 +422,7 @@ body {
         margin: auto;
     }
 
+    /*------------------------header-----------------------------------------------------------*/
     header {
         margin-top: 40px;
         display: flex;
@@ -119,8 +470,313 @@ body {
         font-weight: bold;
     }
 
-    .navHeader{
-        margin:0 10px;
+    .navHeader {
+        margin: 0 10px;
+    }
+
+    /*------------------------Section Recherche-------------------------------------------------------*/
+    button {
+        border: 1px #0065FC solid;
+        background-color: #0065FC;
+        color: white;
+        margin-left: -4px;
+        padding: 12px 18px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    button::after {
+        font-family: "Font Awesome 5 Free", serif;
+        font-weight: 900;
+        content: '\f002';
+    }
+
+    #formSearch {
+        display: flex;
+    }
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    input {
+        padding: 12px 2px;
+        text-align: center;
+        border: 1px #F2F2F2 solid;
+        margin-left: -4px;
+        width: 100%;
+    }
+
+    #iconeMap {
+        border: 1px #F2F2F2 solid;
+        padding: 10px 10px 13px 10px;
+        background-color: #F2F2F2;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #filtresContenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+
+
+    #filtresContenu > p:first-child {
+        padding-top: 10px;
+        margin-right: 20px;
+    }
+
+    #filtresContenu > p > i {
+        padding: 10px;
+        margin-right: 5px;
+        border: 2px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        background-color: #DEEBFF;
+    }
+
+    #filtres > p {
+        display: flex;
+    }
+
+    #filtres > p > i {
+        margin-right: 15px;
+        border: 1px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        padding: 5px 10px;
+    }
+
+    .iconBorder {
+        border: 1px #F2F2F2 solid;
+        border-radius: 20px;
+        padding-right: 10px;
+        margin-left: 20px;
+    }
+
+    /*------------------------Section Hébergements----------------------------------------------------*/
+    .conteneurLodging {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .conteneurLodgingAnnexe {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenuLodging {
+        width: 88%;
+        height: 200px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 15px;
+        background-size: 100% 55%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+
+    }
+
+    .conteneurLodging > h2, .conteneurLodging > p {
+        margin-left: 2%;
+    }
+
+    .contenuLodging > article {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+    }
+
+    .contenuLodging > article > h3, .contenuLodging > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .contenuLodging > article > p, .asideContenu > article > p {
+        font-size: 0.9em;
+    }
+
+    .contenuLodging > article > div > i, .asideContenu > article > div > i {
+        font-size: 0.6em;
+    }
+
+    aside {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .asideContenu {
+        width: auto;
+        height: 120px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 15px;
+        background-size: 40% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .asideContenu > article {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 55%;
+    }
+
+    .asideContenu > article > h3, .asideContenu > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .asideTitle {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .asideTitle > i {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    /*Ressources Lodging*/
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplashResize.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplashResize2.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplashResize.jpg");
+    }
+
+    /*------------------------Section Activités-------------------------------------------------------*/
+    #sectionActivities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .actLarge {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 200px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .actLarge > p, .contenuActSmall > p {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    }
+
+    .actSmall {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenuActSmall {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 200px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .activity1 {
+        background-image: url("../img/activity/4_small/img_06_reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    }
+
+    .activity4 {
+        background-image: url("../img/activity/4_small/img_03_kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    }
+
+    /*----------------------------------Footer-------------------------------------------------------*/
+    footer {
+        width: 100%;
+    }
+
+    #conteneurFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #F2F2F2;
+        margin: 10px;
+    }
+
+    .elementFooter > h3 {
+        font-weight: bold;
+    }
+
+    .elementFooter > ul {
+        padding-left: 0;
+    }
+
+    .elementFooter > ul > li {
+        list-style-type: none;
     }
 }
 
@@ -131,6 +787,7 @@ body {
         margin: auto;
     }
 
+    /*------------------------header-----------------------------------------------------------*/
     header {
         margin-top: 40px;
         display: flex;
@@ -178,8 +835,315 @@ body {
         font-weight: bold;
     }
 
-    .navHeader{
-        margin:0 10px;
+    .navHeader {
+        margin: 0 10px;
+    }
+
+    /*------------------------Section Recherche-------------------------------------------------------*/
+    button {
+        border: 1px #0065FC solid;
+        background-color: #0065FC;
+        color: white;
+        margin-left: -4px;
+        padding: 12px 18px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    button::after {
+        content: 'Rechercher';
+    }
+
+    input {
+        padding: 12px 2px;
+        text-align: center;
+        border: 1px #F2F2F2 solid;
+        margin-left: -4px;
+    }
+
+    #iconeMap {
+        border: 1px #F2F2F2 solid;
+        padding: 10px 10px 13px 10px;
+        background-color: #F2F2F2;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #filtresContenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+
+
+    #filtresContenu > p:first-child {
+        padding-top: 10px;
+        margin-right: 20px;
+    }
+
+    #filtresContenu > p > i {
+        padding: 10px;
+        margin-right: 5px;
+        border: 2px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        background-color: #DEEBFF;
+    }
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #filtres > p > i {
+        margin-right: 15px;
+        border: 1px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        padding: 5px 10px;
+    }
+
+    .iconBorder {
+        border: 1px #F2F2F2 solid;
+        border-radius: 20px;
+        padding-right: 10px;
+        margin-left: 20px;
+    }
+
+    /*------------------------Section Hébergements----------------------------------------------------*/
+    #sectionLodging {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteneurLodging {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .conteneurLodgingAnnexe {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenuLodging {
+        width: 88%;
+        height: 200px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 15px;
+        background-size: 100% 55%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+
+    }
+
+    .conteneurLodging > h2, .conteneurLodging > p {
+        margin-left: 2%;
+    }
+
+    .contenuLodging > article {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+    }
+
+    .contenuLodging > article > h3, .contenuLodging > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .contenuLodging > article > p, .asideContenu > article > p {
+        font-size: 0.9em;
+    }
+
+    .contenuLodging > article > div > i, .asideContenu > article > div > i {
+        font-size: 0.6em;
+    }
+
+    aside {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .asideContenu {
+        width: auto;
+        height: 120px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 15px;
+        background-size: 40% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .asideContenu > article {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 55%;
+    }
+
+    .asideContenu > article > h3, .asideContenu > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .asideTitle {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .asideTitle > i {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    /*Ressources Lodging*/
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplashResize.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplashResize.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplashResize.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplashResize.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplashResize.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplashResize.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplashResize.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplashResize2.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplashResize.jpg");
+    }
+
+    /*------------------------Section Activités-------------------------------------------------------*/
+    #sectionActivities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #sectionActivities > div > h2 {
+        margin-left: 10px;
+    }
+
+    #activitiesVisit {
+        display: flex;
+    }
+
+    .actLarge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 422px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        background-size: 100% 86%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .actLarge > p, .contenuActSmall > p {
+        position: absolute;
+        bottom: -5px;
+        left: 5%;
+    }
+
+    .actSmall {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenuActSmall {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 200px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        /*background-size: 100% 65%;*/
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .activity1 {
+        background-image: url("../img/activity/4_small/img_06_reno-laithienne-QUgJhdY5Fyk-unsplashResize.jpg");
+    }
+
+    .activity4 {
+        background-image: url("../img/activity/4_small/img_03_kilyan-sockalingum-NR8-cBCN3aI-unsplashResize.jpg");
+    }
+
+    /*------------------------Footer-----------------------------------------------------------------*/
+    footer {
+        width: 100%;
+    }
+
+    #conteneurFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #F2F2F2;
+        margin: 10px;
+    }
+
+    .elementFooter > h3 {
+        font-weight: bold;
+    }
+
+    .elementFooter > ul {
+        padding-left: 0;
+    }
+
+    .elementFooter > ul > li {
+        list-style-type: none;
     }
 }
 
@@ -190,6 +1154,7 @@ body {
         margin: auto;
     }
 
+    /*------------------------header-----------------------------------------------------------*/
     header {
         margin-top: 40px;
         display: flex;
@@ -237,7 +1202,316 @@ body {
         font-weight: bold;
     }
 
-    .navHeader{
-        margin:0 10px;
+    .navHeader {
+        margin: 0 10px;
+    }
+
+    /*------------------------Section Recherche-------------------------------------------------------*/
+    button {
+        border: 1px #0065FC solid;
+        background-color: #0065FC;
+        color: white;
+        margin-left: -4px;
+        padding: 12px 18px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    button::after {
+        content: 'Rechercher';
+    }
+
+    input {
+        padding: 12px 2px;
+        text-align: center;
+        border: 1px #F2F2F2 solid;
+        margin-left: -4px;
+    }
+
+    #iconeMap {
+        border: 1px #F2F2F2 solid;
+        padding: 10px 10px 13px 10px;
+        background-color: #F2F2F2;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #filtresContenu {
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+
+
+    #filtresContenu > p:first-child {
+        padding-top: 10px;
+        margin-right: 20px;
+    }
+
+    #filtresContenu > p > i {
+        padding: 10px;
+        margin-right: 5px;
+        border: 2px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        background-color: #DEEBFF;
+    }
+
+    #filtres > p > i {
+        margin-right: 15px;
+        border: 1px #F2F2F2 solid;
+        border-radius: 100%;
+        color: #0065FC;
+        padding: 5px 10px;
+    }
+
+    .iconBorder {
+        border: 1px #F2F2F2 solid;
+        border-radius: 20px;
+        padding-right: 10px;
+        margin-left: 20px;
+    }
+
+    .iconBorder:hover {
+        background-color: #0065FC;
+        color: white;
+    }
+
+    /*------------------------Section Hébergements---------------------------------------------------*/
+    #sectionLodging {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .conteneurLodging {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .conteneurLodgingAnnexe {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contenuLodging {
+        width: 100%;
+        height: 215px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 10px;
+        background-size: 100% 55%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+
+    }
+
+    .conteneurLodging > h2, .conteneurLodging > p {
+        margin-left: 2%;
+    }
+
+    .contenuLodging > article {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+    }
+
+    .contenuLodging > article > h3 {
+        font-size: 1.13em;
+    }
+
+    .contenuLodging > article > h3, .contenuLodging > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .contenuLodging > article > p, .asideContenu > article > p {
+        font-size: 0.9em;
+    }
+
+    .contenuLodging > article > div > i, .asideContenu > article > div > i {
+        font-size: 0.6em;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        margin: 10px;
+        width: 53%;
+    }
+
+    .asideContenu {
+        width: 92%;
+        height: 120px;
+        border: 0.3rem white solid;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px #F2F2F2;
+        margin: 7px;
+        background-size: 35% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .asideContenu > article {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 58%;
+    }
+
+    .asideContenu > article > h3 {
+        font-size: 1.13em;
+    }
+
+    .asideContenu > article > h3, .asideContenu > article > p {
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    .asideTitle {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .asideTitle > i {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    /*Ressources Lodging*/
+    .lodging1 {
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+
+    .lodging2 {
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+
+    .lodging3 {
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+
+    .lodging4 {
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+
+    .lodging5 {
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+
+    .lodging6 {
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+
+    /*Ressources Aside*/
+    #aside1 {
+        background-image: url("../img/lodging/4_small/img_03_emile-guillemot-Bj_rcSC5XfE-unsplashResize.jpg");
+    }
+
+    #aside2 {
+        background-image: url("../img/lodging/4_small/img_02_aw-creative-VGs8z60yT2c-unsplashResize2.jpg");
+    }
+
+    #aside3 {
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
+
+    /*------------------------Section Activités-------------------------------------------------------*/
+    #sectionActivities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #sectionActivities > div > h2 {
+        margin-left: 10px;
+    }
+
+    #activitiesVisit {
+        display: flex;
+    }
+
+    .actLarge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 422px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        background-size: 100% 88%;
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .actLarge > p, .contenuActSmall > p {
+        position: absolute;
+        bottom: -2%;
+        left: 5%;
+    }
+
+    .actSmall {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenuActSmall {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 200px;
+        border: 0.1em #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px #F2F2F2;
+        margin: 10px;
+        /*background-size: 100% 65%;*/
+        background-repeat: no-repeat;
+        background-color: white;
+        position: relative;
+    }
+
+    .activity1 {
+        background-image: url("../img/activity/4_small/img_06_reno-laithienne-QUgJhdY5Fyk-unsplashResize.jpg");
+    }
+
+    .activity4 {
+        background-image: url("../img/activity/4_small/img_03_kilyan-sockalingum-NR8-cBCN3aI-unsplashResize.jpg");
+    }
+
+    /*------------------------Footer-----------------------------------------------------------------*/
+    #conteneurFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #F2F2F2;
+        margin: 10px;
+    }
+
+    .elementFooter > h3 {
+        font-weight: bold;
+    }
+
+    .elementFooter > ul {
+        padding-left: 0;
+    }
+
+    .elementFooter > ul > li {
+        list-style-type: none;
     }
 }
