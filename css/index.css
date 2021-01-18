@@ -1413,7 +1413,7 @@ body {
     }
 
     .lodging6 {
-        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplashResize2.jpg");
     }
 
     /*Ressources Aside*/
@@ -1426,7 +1426,7 @@ body {
     }
 
     #aside3 {
-        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplashResize2.jpg");
     }
 
     /*------------------------Section Activités-------------------------------------------------------*/
@@ -1480,7 +1480,7 @@ body {
         border-radius: 20px;
         box-shadow: 2px 5px 5px #F2F2F2;
         margin: 10px;
-        /*background-size: 100% 65%;*/
+        background-size: 100% 65%;
         background-repeat: no-repeat;
         background-color: white;
         position: relative;
