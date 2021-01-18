@@ -1154,6 +1154,14 @@ body {
         margin: auto;
     }
 
+    .effetCard {
+        transform: scale(1);
+        transition: ease-in-out 400ms;
+    }
+    .effetCard:hover {
+        transform: scale(1.15);
+    }
+
     /*------------------------header-----------------------------------------------------------*/
     header {
         margin-top: 40px;
