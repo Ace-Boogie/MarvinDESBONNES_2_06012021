@@ -2,6 +2,12 @@ body {
     font-family: 'Raleway', serif;
 }
 
+.effetCard > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 /*Color*/
 .colorLightGrey {
     color: #F2F2F2;
@@ -50,7 +56,7 @@ body {
         margin: 20px 10px;
     }
 
-    #logo_reservia, #navRegister {
+    #divLogo, #navRegister {
         order: -1;
     }
 
@@ -192,7 +198,7 @@ body {
     }
 
     .conteneurLodging {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -418,37 +424,33 @@ body {
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
     main {
-        width: 93%;
-        margin: auto;
+        width: auto;
+        flex-wrap: wrap;
     }
 
     /*------------------------header-----------------------------------------------------------*/
     header {
-        margin-top: 40px;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 20px 10px;
     }
 
-    img {
-        position: absolute;
-        top: 6%;
-        left: 4%;
+    #divLogo, #navRegister {
+        order: -1;
     }
 
     #navsHeader {
         display: flex;
-        flex-direction: row;
+        width: 100%;
     }
 
     #navsHeader > ul {
+        width: 100%;
+        padding-left: 0;
         display: flex;
+        justify-content: center;
         list-style-type: none;
-    }
-
-    #navRegister {
-        margin-left: 15px;
     }
 
     #navsHeader > ul > li > a, #navRegister {
@@ -461,13 +463,21 @@ body {
     }
 
     #navLodging {
-        border-top: 2px #0065FC solid;
-        padding-top: 30px;
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
     }
 
     #navActivity {
         color: black;
         font-weight: bold;
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        width: 100%;
     }
 
     .navHeader {
@@ -557,6 +567,11 @@ body {
     }
 
     /*------------------------Section Hébergements----------------------------------------------------*/
+    #sectionLodging {
+        display: flex;
+        flex-direction: column;
+    }
+
     .conteneurLodging {
         width: auto;
         display: flex;
@@ -662,27 +677,27 @@ body {
 
     /*Ressources Lodging*/
     .lodging1 {
-        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_07_marcus-loke-WQJvWU_HZFo-unsplashResize.jpg");
     }
 
     .lodging2 {
-        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_06_fred-kleber-gTbaxaVLvsg-unsplashResize.jpg");
     }
 
     .lodging3 {
-        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_09_reisetopia-B8WIgxA_PFU-unsplashResize.jpg");
     }
 
     .lodging4 {
-        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_01_annie-spratt-Eg1qcIitAuA-unsplashResize.jpg");
     }
 
     .lodging5 {
-        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_08_nicate-lee-kT-ZyaiwBe0-unsplashResize.jpg");
     }
 
     .lodging6 {
-        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+        background-image: url("../img/lodging/4_small/img_04_febrian-zakaria-M6S1WvfW68A-unsplashResize.jpg");
     }
 
     /*Ressources Aside*/
@@ -695,7 +710,7 @@ body {
     }
 
     #aside3 {
-        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplashResize.jpg");
+        background-image: url("../img/lodging/4_small/img_05_febrian-zakaria-sjvU0THccQA-unsplash.jpg");
     }
 
     /*------------------------Section Activités-------------------------------------------------------*/
@@ -754,17 +769,16 @@ body {
         background-image: url("../img/activity/4_small/img_03_kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
     }
 
-    /*----------------------------------Footer-------------------------------------------------------*/
-    footer {
-        width: 100%;
-    }
 
+    /*------------------------Footer-----------------------------------------------------------------*/
     #conteneurFooter {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         background-color: #F2F2F2;
         margin: 10px;
+        padding-left: 25px;
     }
 
     .elementFooter > h3 {
@@ -796,10 +810,10 @@ body {
         align-items: center;
     }
 
-    img {
-        position: absolute;
-        top: 6%;
-        left: 4%;
+    #divLogo {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
     }
 
     #navsHeader {
@@ -925,15 +939,21 @@ body {
         border-radius: 20px;
     }
 
+    .conteneurLodgingCard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .conteneurLodgingAnnexe {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
     }
 
     .contenuLodging {
-        width: 88%;
+        width: 40%;
         height: 200px;
         border: 0.3rem white solid;
         border-radius: 20px;
@@ -1150,7 +1170,7 @@ body {
 /*Large devices (desktops)*/
 @media (min-width: 992px) {
     main {
-        width: 93%;
+        width: 1024px;
         margin: auto;
     }
 
@@ -1171,10 +1191,10 @@ body {
         align-items: center;
     }
 
-    img {
-        position: absolute;
-        top: 6%;
-        left: 4%;
+    #divLogo {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
     }
 
     #navsHeader {
@@ -1188,7 +1208,8 @@ body {
     }
 
     #navRegister {
-        margin-left: 15px;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     #navsHeader > ul > li > a, #navRegister {
@@ -1276,11 +1297,12 @@ body {
         border-radius: 20px;
         padding-right: 10px;
         margin-left: 20px;
+        transform: scale(1);
+        transition: ease-in-out 400ms;
     }
 
     .iconBorder:hover {
-        background-color: #0065FC;
-        color: white;
+        transform: scale(1.1);
     }
 
     /*------------------------Section Hébergements---------------------------------------------------*/
@@ -1299,10 +1321,17 @@ body {
         border-radius: 20px;
     }
 
+    .conteneurLodgingCard {
+        display: flex;
+        justify-content: flex-start;
+    }
+
     .conteneurLodgingAnnexe {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        width: 30%;
+        margin-right: 5%;
     }
 
     .contenuLodging {
@@ -1506,9 +1535,19 @@ body {
     #conteneurFooter {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
         background-color: #F2F2F2;
         margin: 10px;
+    }
+    .elementFooter {
+        padding-right: 5%;
+    }
+    .footer1 {
+        padding-left: 5%;
+    }
+
+    .footer2, .footer3 {
+        padding-left: 10%;
     }
 
     .elementFooter > h3 {
